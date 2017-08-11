@@ -48,7 +48,7 @@ public class PlayerFieldController extends MainController implements ActionListe
 			if(getFacade().getCurrentPlayer().getField().getDice()[i].getActive()) {
 				if(this.dice[i] != null) getGameView().getContent().remove(this.dice[i]);
 				int randomDice = ThreadLocalRandom.current().nextInt(1,7);
-				this.dice[i] = new DiceLabel(i,new ImageIcon("C:\\Users\\denib\\Documents\\Workspace2\\OOO_Yahtzee\\src\\images\\" + randomDice + ".jpg"));
+				this.dice[i] = new DiceLabel(i,new ImageIcon("C:\\Users\\denib\\git\\OOO_Yahtzee\\src\\images\\" + randomDice + ".jpg"));
 				getFacade().getCurrentPlayer().getField().setDice(i, new Dice(randomDice, i));
 				this.dice[i].setText(getFacade().getCurrentPlayer().getField().getDice()[i].getActiveToString());
 				diceButton.getParent().add(this.dice[i]);
