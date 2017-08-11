@@ -51,6 +51,10 @@ public class PlayerFieldPanel extends JPanel implements PlayerFieldObserver {
 	public PlayerFieldController getFieldController() {
 		return fieldController;
 	}
+	
+	public String getCategory() {
+		return categories.getSelectedItem().toString();
+	}
 
 	@Override
 	public void updateField(Field field) {

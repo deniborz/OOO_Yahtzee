@@ -81,6 +81,10 @@ public class Game implements PlayerTurnObservable {
     public void nextRoll() {
 		rolls++;
 	}
+    
+    public void resetRolls() {
+		rolls = 0;
+	}
 
 	@Override
 	public void addTurnObserver(PlayerTurnObserver turnObserver) {

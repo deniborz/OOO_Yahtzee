@@ -124,7 +124,10 @@ public class GameView implements PlayerTurnObserver {
 	@Override
 	public void nextTurn(Game game) {
 		System.out.println(game.getPlayerTurn());
+		frame.remove(content);
+		controller.getFacade().resetRolls();
 		content = new PlayerFieldPanel(controller);
+		frame.add(content);
 		currentPlayer.setText(controller.getFacade().getCurrentPlayer().getName() + " is playing");
 	}
 	

@@ -39,6 +39,11 @@ public class Facade {
     public void nextRoll() {
         game.nextRoll();
     }
+    
+    public void resetRolls() {
+        game.resetRolls();
+    }
+
 
 	public void setPlayersAmount(int playersAmount) {
 		game.setPlayersAmount(playersAmount);
